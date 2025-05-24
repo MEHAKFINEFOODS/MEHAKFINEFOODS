@@ -1,81 +1,119 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Mehak Finefoods - Aliza Basmati Rice</title>
+  <title>Mehak Finefoods | Official Importer of JDRM Basmati Rice</title>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"/>
   <style>
     body {
-      margin: 0;
-      font-family: 'Montserrat', sans-serif;
+      margin: 0; font-family: 'Montserrat', sans-serif; background-color: #fefefe; color: #333;
+    }
+    header {
       background-image: url('rice-background.jpg');
       background-size: cover;
-      background-attachment: fixed;
       background-position: center;
-      color: #333;
-    }
-    .overlay { background: rgba(255,255,255,0.9); padding: 40px 20px; }
-    header { text-align: center; padding: 60px 20px 20px; }
-    header h1 { margin: 0; font-size: 2.5em; color: #1b365d; }
-    .section { max-width: 1000px; margin: 40px auto; }
-    .section h2 { color: #1b365d; margin-bottom: 10px; }
-    .media { display: flex; flex-wrap: wrap; gap: 20px; justify-content: center; }
-    .media img, .media video {
-      width: 300px; max-width: 90%; border-radius: 10px;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.15);
-    }
-    .button {
-      display: inline-block;
-      padding: 12px 24px;
-      background-color: #1b365d;
+      padding: 100px 20px;
+      text-align: center;
       color: white;
-      text-decoration: none;
-      border-radius: 5px;
-      margin-top: 20px;
+    }
+    header h1 {
+      font-size: 3em;
+      margin: 0;
+      text-shadow: 1px 1px 4px #000;
+    }
+    header p {
+      font-size: 1.25em;
+      margin-top: 15px;
+      text-shadow: 1px 1px 3px #000;
+    }
+    .section {
+      max-width: 1000px;
+      margin: 60px auto;
+      padding: 0 20px;
+    }
+    .section h2 {
+      text-align: center;
+      color: #1b365d;
+      margin-bottom: 20px;
+    }
+    .section p, .section ul {
+      font-size: 1.1em;
+      line-height: 1.6em;
+    }
+    .media { display: flex; flex-wrap: wrap; gap: 20px; justify-content: center; margin-top: 40px; }
+    .media img, .media video {
+      width: 300px; max-width: 90%;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
     }
     footer {
-      background-color: #1b365d;
+      background: #1b365d;
       color: white;
       text-align: center;
-      padding: 20px;
+      padding: 30px 20px;
+      margin-top: 60px;
     }
+    .aos-init { opacity: 0; transition: opacity 0.6s ease, transform 0.6s ease; }
+    [data-aos] { opacity: 1 !important; }
   </style>
 </head>
 <body>
-<div class="overlay">
 
-<header>
+<header data-aos="fade-down">
   <h1>Mehak Finefoods Inc.</h1>
-  <p><strong>Importer of Premium Basmati Rice | ALIZA 1121 & 1401 Steam Basmati</strong></p>
+  <p>Your Gateway to Premium Basmati Rice – Direct from JDRM India to Canadian Homes</p>
 </header>
 
-<div class="section">
-  <h2>Our Mission</h2>
-  <p>To bring the finest, fluffiest, and most aromatic basmati rice from India to Canadian tables—while ensuring regulatory compliance and unmatched quality.</p>
+<div class="section" data-aos="fade-up">
+  <h2>Our Promise</h2>
+  <p>
+    At Mehak Finefoods, we believe in bringing more than just rice to your table — we bring a legacy of purity, aroma, and tradition. 
+    As the official importer for Janki Dass Rice Mills (JDRM India), we ensure that every grain carries forward a story of quality, care, and international trust.
+  </p>
 </div>
 
-<div class="section">
-  <h2>Why ALIZA Basmati?</h2>
-  <p>Available in 1121 & 1401 Steam varieties, ALIZA Basmati Rice is known for its long, pristine grains, delicate aroma, and consistent cooking performance. Certified and imported under CFIA compliance protocols.</p>
+<div class="section" data-aos="fade-up">
+  <h2>Why Choose Us</h2>
+  <ul>
+    <li>🌾 Farm-to-fork basmati from India’s best growing regions</li>
+    <li>🏭 Advanced hygienic processing by JDRM, a 40+ year legacy</li>
+    <li>📜 Global certifications (ISO, HACCP, HALAL, USFDA, etc.)</li>
+    <li>🌱 Sustainable, responsible, and CFIA-compliant import process</li>
+  </ul>
 </div>
 
-<div class="section media">
-  <img src="IMG_8091 2.jpg" alt="Aliza Biryani Bag">
-  <img src="IMG_8086 2.jpg" alt="JDRM Capsule">
-  <img src="IMG_8090 2.jpg" alt="Aliza Classic Promo">
+<div class="section" data-aos="fade-up">
+  <h2>Our Premium Selections</h2>
+  <ul>
+    <li>1121 Steam Basmati Rice – Long, Fluffy, Perfect</li>
+    <li>1401 Steam Basmati – Rich Aroma & Premium Texture</li>
+    <li>Classic and Biryani Special Blends – For Every Plate</li>
+  </ul>
+</div>
+
+<div class="section media" data-aos="zoom-in">
+  <img src="IMG_8091 2.jpg" alt="Biryani Bag">
+  <img src="IMG_8086 2.jpg" alt="Capsule Pack">
+  <img src="IMG_8090 2.jpg" alt="Classic Promo">
   <video controls src="266FB6F4-0A2E-4495-8473-3A0E37C75A04 2.MP4"></video>
   <video controls src="FFB3968C-F9B5-43E3-BC1D-9D16565CF1D3 2.MP4"></video>
   <video controls src="456BD220-868E-4CAA-B163-4F09D0B414A1 2.MP4"></video>
 </div>
 
-
-</div>
-
-<footer>
-  <p>mehakfinefoodsinc@gmail.com | mehakfinefoods.ca</p>
+<footer data-aos="fade-in">
+  <p>Contact: mehakfinefoodsinc@gmail.com | mehakfinefoods.ca</p>
   <p>&copy; 2025 Mehak Finefoods Inc. All rights reserved.</p>
 </footer>
 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+<script>
+  AOS.init({
+    duration: 800,
+    offset: 100,
+  });
+</script>
 </body>
 </html>
