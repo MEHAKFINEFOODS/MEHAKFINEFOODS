@@ -2,52 +2,86 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>Mehak Finefoods - Aliza Basmati Rice</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
     <style>
-        body { font-family: Arial, sans-serif; margin: 0; padding: 0; background: #f9f9f9; color: #333; }
-        header { background: #146356; color: white; padding: 20px 40px; text-align: center; }
-        section { padding: 20px 40px; }
-        .product { background: white; margin-bottom: 20px; padding: 20px; border-radius: 8px; }
-        .product h2 { margin-top: 0; color: #146356; }
-        footer { background: #333; color: white; text-align: center; padding: 20px; }
-        a.button { display: inline-block; margin-top: 10px; padding: 10px 20px; background: #146356; color: white; text-decoration: none; border-radius: 4px; }
+        body {
+            margin: 0; font-family: 'Montserrat', sans-serif;
+            background-image: url('rice-background.jpg');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            color: #333;
+        }
+        .overlay {
+            background-color: rgba(255,255,255,0.9);
+            padding: 40px 20px;
+        }
+        header {
+            text-align: center; padding: 60px 20px 20px;
+        }
+        header h1 {
+            margin: 0; font-size: 2.5em; color: #1b365d;
+        }
+        .section {
+            max-width: 1000px; margin: 40px auto;
+        }
+        .section h2 {
+            color: #1b365d; margin-bottom: 10px;
+        }
+        .media { display: flex; flex-wrap: wrap; gap: 20px; justify-content: center; }
+        .media img, .media video {
+            width: 300px; max-width: 90%; border-radius: 10px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+        }
+        .button {
+            display: inline-block; padding: 12px 24px;
+            background-color: #1b365d; color: white; text-decoration: none;
+            border-radius: 5px; margin-top: 20px;
+        }
+        footer {
+            background-color: #1b365d; color: white;
+            text-align: center; padding: 20px;
+        }
     </style>
 </head>
 <body>
+<div class="overlay">
 
 <header>
     <h1>Mehak Finefoods Inc.</h1>
-    <p>Importer of Premium Basmati Rice</p>
+    <p><strong>Importer of Premium Basmati Rice | ALIZA 1121 & 1401 Steam Basmati</strong></p>
 </header>
 
-<section>
-    <div class="product">
-        <h2>ALIZA 1121 Steam Basmati Rice</h2>
-        <p>Elegant long grains, aged to perfection. Packaged in 4.5 kg bags. Ideal for export, wholesale, and retail shelves.</p>
-    </div>
+<div class="section">
+    <h2>Our Mission</h2>
+    <p>To bring the finest, fluffiest, and most aromatic basmati rice from India to Canadian tables—while ensuring regulatory compliance and unmatched quality.</p>
+</div>
 
-    <div class="product">
-        <h2>ALIZA 1401 Steam Basmati Rice</h2>
-        <p>Fragrant, fluffy, and rich in taste. Long slender grains perfect for biryani, pilaf, and fine cooking. Available in 4.5 kg bags.</p>
-    </div>
+<div class="section">
+    <h2>Why ALIZA Basmati?</h2>
+    <p>Available in 1121 & 1401 Steam varieties, ALIZA Basmati Rice is known for its long, pristine grains, delicate aroma, and consistent cooking performance. Certified and imported under CFIA compliance protocols.</p>
+</div>
 
-    <div class="product">
-        <h2>Download Our CFIA-Compliant Label</h2>
-        <p>Our rice packaging meets all CFIA bilingual labeling standards in Canada.</p>
-        <a class="button" href="https://chat.openai.com/sandbox:/mnt/data/MehakFinefoods_Label_CFIA_Compliant.pdf" target="_blank">Download PDF Label</a>
-    </div>
+<div class="section media">
+    <img src="IMG_8091.jpg" alt="Aliza Biryani Bag">
+    <img src="IMG_8086.jpg" alt="JDRM Capsule">
+    <img src="IMG_8090.jpg" alt="Aliza Classic Promo">
+    <video controls src="266FB6F4.mp4"></video>
+    <video controls src="FFB3968C.mp4"></video>
+    <video controls src="456BD220.mp4"></video>
+</div>
 
-    <div class="product">
-        <h2>Contact Us</h2>
-        <p>Email: mehakfinefoodsinc@gmail.com</p>
-        <p>Website: mehakfinefoods.ca</p>
-        <p>183 Collings Ave, Bradford, ON, Canada</p>
-    </div>
-</section>
+<div class="section" style="text-align: center;">
+    <a class="button" href="MehakFinefoods_Label_CFIA_Compliant.pdf" target="_blank">Download CFIA-Compliant Label</a>
+</div>
+
+</div>
 
 <footer>
+    <p>mehakfinefoodsinc@gmail.com | mehakfinefoods.ca</p>
     <p>&copy; 2025 Mehak Finefoods Inc. All rights reserved.</p>
 </footer>
 
