@@ -24,7 +24,7 @@
       align-items: center;
       justify-content: center;
       flex-direction: column;
-      color: #103D74; /* Dark blue */
+      color: #103D74;
       text-align: center;
     }
     header h1 {
@@ -40,26 +40,37 @@
     .section {
       max-width: 1000px;
       margin: 60px auto;
-      padding: 40px 20px;
-      background: url('content-bg.jpg') no-repeat center;
-      background-size: cover;
-      border-radius: 10px;
+      padding: 60px 40px;
+      background: url('section-texture.jpg') center/cover no-repeat;
+      color: #1b1b1b;
+      border-radius: 14px;
+      box-shadow: 0 0 40px rgba(0,0,0,0.1);
     }
     .section h2 {
       text-align: center;
       color: #1b365d;
-      margin-bottom: 20px;
+      margin-bottom: 25px;
+      background-color: rgba(255,255,255,0.9);
+      padding: 8px;
+      border-radius: 6px;
     }
     .section p, .section ul {
       font-size: 1.1em;
       line-height: 1.6em;
       background-color: rgba(255,255,255,0.85);
-      padding: 15px;
-      border-radius: 10px;
+      padding: 20px;
+      border-radius: 12px;
     }
-    .media { display: flex; flex-wrap: wrap; gap: 20px; justify-content: center; margin-top: 40px; }
+    .media {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: center;
+      margin-top: 40px;
+    }
     .media img, .media video {
-      width: 300px; max-width: 90%;
+      width: 300px;
+      max-width: 90%;
       border-radius: 10px;
       box-shadow: 0 4px 10px rgba(0,0,0,0.1);
     }
