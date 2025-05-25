@@ -25,27 +25,25 @@
       box-shadow: 0 2px 5px rgba(0,0,0,0.1);
       padding: 10px 30px;
       display: flex;
+      flex-wrap: wrap;
       justify-content: space-between;
       align-items: center;
       z-index: 1000;
-      flex-wrap: wrap;
     }
     nav a {
       text-decoration: none;
       color: #103D74;
-      margin: 0 15px;
+      margin: 0 10px;
       font-weight: 600;
-      white-space: nowrap;
     }
     header {
       height: 100vh;
-      background: url('rice1.jpg') center center / cover no-repeat;
+      background: url('rice-background.jpg') center center / cover no-repeat;
       display: flex;
       align-items: center;
       justify-content: center;
       text-align: center;
       padding-top: 60px;
-      transition: background-image 1s ease-in-out;
     }
     header h1 {
       background: rgba(255, 255, 255, 0.7);
@@ -66,6 +64,17 @@
       padding: 30px;
       margin: auto;
       max-width: 800px;
+      border-radius: 10px;
+    }
+    .image-row {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      flex-wrap: wrap;
+      margin-bottom: 20px;
+    }
+    .image-row img {
+      width: 200px;
       border-radius: 10px;
     }
     footer {
@@ -115,9 +124,14 @@
     <div class="content-box">
       <h2>Experience ALIZA</h2>
       <p>Explore the elegance and purity of ALIZA basmati through visuals crafted by JDRM.</p>
-      <video src="266FB6F4-0A2E-4495-8473-3A0E37C75A04 2.MP4" controls width="300"></video>
-      <video src="FFB3968C-F9B5-43E3-BC1D-9D16565CF1D3 2.MP4" controls width="300"></video>
-      <video src="456BD220-868E-4CAA-B163-4F09D0B414A1 2.MP4" controls width="300"></video>
+      <div class="image-row">
+        <img src="IMG_8091 2.jpg" alt="Aliza Biryani Bag">
+        <img src="IMG_8086 2.jpg" alt="JDRM Capsule">
+        <img src="IMG_8090 2.jpg" alt="Aliza Classic Promo">
+      </div>
+      <video src="266FB6F4.mp4" controls width="300"></video>
+      <video src="FFB3968C.mp4" controls width="300"></video>
+      <video src="456BD220.mp4" controls width="300"></video>
     </div>
   </section>
 
@@ -137,15 +151,6 @@
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script>
     AOS.init();
-
-    // Background image rotator
-    const header = document.getElementById("hero");
-    const images = ["rice1.jpg", "rice2.jpg", "rice3.jpg", "rice4.jpg"];
-    let index = 0;
-    setInterval(() => {
-      index = (index + 1) % images.length;
-      header.style.backgroundImage = `url('${images[index]}')`;
-    }, 3000);
   </script>
 </body>
 </html>
