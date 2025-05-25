@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -27,21 +28,24 @@
       justify-content: space-between;
       align-items: center;
       z-index: 1000;
+      flex-wrap: wrap;
     }
     nav a {
       text-decoration: none;
       color: #103D74;
       margin: 0 15px;
       font-weight: 600;
+      white-space: nowrap;
     }
     header {
       height: 100vh;
-      background: url('rice-background.jpg') center center / cover no-repeat;
+      background: url('rice1.jpg') center center / cover no-repeat;
       display: flex;
       align-items: center;
       justify-content: center;
       text-align: center;
       padding-top: 60px;
+      transition: background-image 1s ease-in-out;
     }
     header h1 {
       background: rgba(255, 255, 255, 0.7);
@@ -74,7 +78,7 @@
 </head>
 <body>
   <nav>
-    <div><strong>Mehak Finefoods</strong></div>
+    <div><strong>MEHAK FINEFOODS INC.</strong></div>
     <div>
       <a href="#hero">Home</a>
       <a href="#promise">Promise</a>
@@ -133,6 +137,15 @@
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script>
     AOS.init();
+
+    // Background image rotator
+    const header = document.getElementById("hero");
+    const images = ["rice1.jpg", "rice2.jpg", "rice3.jpg", "rice4.jpg"];
+    let index = 0;
+    setInterval(() => {
+      index = (index + 1) % images.length;
+      header.style.backgroundImage = `url('${images[index]}')`;
+    }, 3000);
   </script>
 </body>
 </html>
