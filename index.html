@@ -25,28 +25,30 @@
       box-shadow: 0 2px 5px rgba(0,0,0,0.1);
       padding: 10px 30px;
       display: flex;
-      flex-wrap: wrap;
       justify-content: space-between;
       align-items: center;
       z-index: 1000;
+      font-weight: 600;
     }
     nav a {
       text-decoration: none;
       color: #103D74;
-      margin: 0 10px;
-      font-weight: 600;
+      margin: 0 15px;
     }
     header {
       height: 100vh;
-      background: url('rice-background.jpg') center center / cover no-repeat;
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
       display: flex;
       align-items: center;
       justify-content: center;
       text-align: center;
       padding-top: 60px;
+      transition: background-image 1s ease-in-out;
     }
     header h1 {
-      background: rgba(255, 255, 255, 0.7);
+      background: rgba(255, 255, 255, 0.8);
       display: inline-block;
       padding: 20px;
       border-radius: 10px;
@@ -63,18 +65,18 @@
       background: rgba(255,255,255,0.85);
       padding: 30px;
       margin: auto;
-      max-width: 800px;
+      max-width: 1000px;
       border-radius: 10px;
     }
-    .image-row {
+    .media-row {
       display: flex;
       justify-content: center;
       gap: 20px;
       flex-wrap: wrap;
-      margin-bottom: 20px;
+      margin-top: 20px;
     }
-    .image-row img {
-      width: 200px;
+    .media-row img, .media-row video {
+      max-width: 300px;
       border-radius: 10px;
     }
     footer {
@@ -108,7 +110,7 @@
     </div>
   </section>
 
-  <section id="choose" data-aos="fade-right">
+  <section id="choose" class="bg-section" data-aos="fade-right">
     <div class="content-box">
       <h2>Why Choose Us</h2>
       <ul style="text-align: left;">
@@ -124,18 +126,20 @@
     <div class="content-box">
       <h2>Experience ALIZA</h2>
       <p>Explore the elegance and purity of ALIZA basmati through visuals crafted by JDRM.</p>
-      <div class="image-row">
-        <img src="IMG_8091 2.jpg" alt="Aliza Biryani Bag">
-        <img src="IMG_8086 2.jpg" alt="JDRM Capsule">
-        <img src="IMG_8090 2.jpg" alt="Aliza Classic Promo">
+      <div class="media-row">
+        <img src="IMG_8086 2.jpg" alt="Aliza Promo 1">
+        <img src="IMG_8090 2.jpg" alt="Aliza Promo 2">
+        <img src="IMG_8091 2.jpg" alt="Aliza Promo 3">
       </div>
-      <video src="266FB6F4.mp4" controls width="300"></video>
-      <video src="FFB3968C.mp4" controls width="300"></video>
-      <video src="456BD220.mp4" controls width="300"></video>
+      <div class="media-row">
+        <video src="266FB6F4.mp4" controls></video>
+        <video src="FFB3968C.mp4" controls></video>
+        <video src="456BD220.mp4" controls></video>
+      </div>
     </div>
   </section>
 
-  <section id="contact" data-aos="zoom-in">
+  <section id="contact" class="bg-section" data-aos="zoom-in">
     <div class="content-box">
       <h2>Contact Us</h2>
       <p>Email: <a href="mailto:mehakfinefoodsinc@gmail.com">mehakfinefoodsinc@gmail.com</a></p>
@@ -151,6 +155,13 @@
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script>
     AOS.init();
+    const header = document.querySelector("header");
+    const backgrounds = ["rice2.jpg", "rice3.jpg", "rice4.jpg", "rice-background.jpg"];
+    let i = 0;
+    setInterval(() => {
+      header.style.backgroundImage = `url('${backgrounds[i]}')`;
+      i = (i + 1) % backgrounds.length;
+    }, 3000);
   </script>
 </body>
 </html>
